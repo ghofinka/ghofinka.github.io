@@ -1,23 +1,23 @@
 import { Project, TechCategory, OpenSourceContribution, ExperienceHighlight } from "./types";
 
 export const DEV_NAME = "Inka Putri";
-export const DEV_TITLE = "Lead Systems & Infrastructure Engineer";
+export const DEV_TITLE = "Backend Engineer";
 export const DEV_LOCATION = "Jakarta, ID (Remote Friendly)";
-export const DEV_EMAIL = "inka.putri.dev@gmail.com";
+export const DEV_EMAIL = "ghofinka@gmail.com";
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/inka-putri-telemetry",
-  linkedin: "https://linkedin.com/in/inka-putri-infra",
-  email: "inka.putri.dev@gmail.com",
+  github: "https://github.com/ghofinka",
+  linkedin: "https://linkedin.com/in/ghofinka",
+  email: "ghofinka@gmail.com",
 };
 
-export const DEV_BIO = 
-  "I am a Lead Systems and Infrastructure Engineer specializing in designing and implementing high-throughput, low-latency distributed networks, custom API routing gateways, and reliable telemetry processing cores. I write clean, performant modules in Rust, Go, and Kotlin, orchestrating secure multi-cloud structures using Terraform or Kubernetes with focus on predictable p99 limits and reliable double-entry financial ledger operations.";
+export const DEV_BIO =
+  "I specialize in backend engineering, designing APIs, business services, and system integrations that power enterprise applications. Beyond backend development, I've worked on frontend features, data processing pipelines, and large-scale ETL workflows involving data cleansing, normalization, and transformation to ensure reliable and consistent information across systems.";
 
 export const ABOUT_ME_DETAILED = {
-  introduction: "Hi, I'm Inka. Over the last 8+ years, I have lived at the intersection of systems software development and automated cloud infrastructure. I believe backend code shouldn't just be functional—it should be fast, memory-safe, predictable under extreme load, and highly observable.",
-  philosophy: "Instead of throwing more hardware at scale challenges, I focus on optimizing garbage collection pauses, avoiding unnecessary memory allocations, designing clean non-blocking network I/O, and ensuring eventual consistency stays consistently accurate.",
-  currentFocus: "Currently, I lead core platform workloads, helping enterprise organizations build internal gateway developer portals, scale transactional ledgers, and establish robust telemetry pipelines that can process millions of concurrent payloads."
+  introduction: "Hi, I'm Inka. Backend Engineer with 10+ years of experience in building scalable enterprise systems across financial and insurance services. Recently, I've been combining backend engineering with AI to build more intelligent applications. I'm continuously learning new technologies to stay ahead of the rapidly evolving software engineering landscape. Connect with me on LinkedIn or shoot me an email if you’d like to chat about engineering, AI, or potential collaborations.",
+  philosophy: "Great software isn't defined by the interface alone. It's built on reliable systems underneath. I enjoy designing the backend that quietly handles complexity, keeps data consistent, and scales as products evolve. Like a building's foundation, the best engineering is often the part users never see.",
+  currentFocus: "Currently, I'm focused on building and maintaining scalable backend services, improving application performance, designing clean APIs, and collaborating across teams to deliver reliable software that solves real business problems."
 };
 
 export const PROJECTS_DATA: Project[] = [
@@ -69,41 +69,41 @@ export const TECH_STACK_DATA: TechCategory[] = [
   {
     category: "Languages",
     items: [
-      { name: "Rust", level: "Expert" },
       { name: "Go", level: "Expert" },
-      { name: "Kotlin", level: "Proficient" },
+      { name: "PHP", level: "Expert" },
+      { name: "Java", level: "Proficient" },
       { name: "TypeScript", level: "Proficient" },
-      { name: "C++", level: "Familiar" }
+      { name: "Python", level: "Familiar" }
     ]
   },
   {
-    category: "Databases & Streams",
+    category: "Databases & Messaging",
     items: [
-      { name: "Apache Kafka", level: "Expert" },
-      { name: "ScyllaDB / Cassandra", level: "Expert" },
+      { name: "MySQL", level: "Expert" },
       { name: "PostgreSQL", level: "Expert" },
-      { name: "Redis Cluster", level: "Expert" },
-      { name: "Elasticsearch", level: "Proficient" }
+      { name: "MongoDB", level: "Proficient" },
+      { name: "Kafka", level: "Proficient" },
+      { name: "NSQ", level: "Expert" }
     ]
   },
   {
     category: "Cloud & DevOps",
     items: [
-      { name: "Kubernetes (EKS/GKE)", level: "Expert" },
-      { name: "Terraform / IAC", level: "Expert" },
-      { name: "Docker / Podman", level: "Expert" },
-      { name: "AWS", level: "Expert" },
-      { name: "GCP", level: "Proficient" }
+      { name: "Docker", level: "Expert" },
+      { name: "Kubernetes", level: "Proficient" },
+      { name: "AWS", level: "Proficient" },
+      { name: "Github Actions", level: "Proficient" },
+      { name: "BigData", level: "Proficient" }
     ]
   },
   {
     category: "Frameworks & Tooling",
     items: [
-      { name: "gRPC", level: "Expert" },
-      { name: "Envoy Proxy", level: "Expert" },
-      { name: "eBPF Tools", level: "Proficient" },
+      { name: "RESTful API", level: "Expert" },
+      { name: "GraphQL", level: "Expert" },
       { name: "Prometheus & Grafana", level: "Expert" },
-      { name: "React (for Portals)", level: "Proficient" }
+      { name: "OpenAPI", level: "Proficient" },
+      { name: "Flyway", level: "Proficient" }
     ]
   }
 ];
@@ -137,63 +137,67 @@ export const OS_CONTRIBUTIONS: OpenSourceContribution[] = [
 
 export const EXPERIENCE_HIGHLIGHTS: ExperienceHighlight[] = [
   {
-    company: "SagaStream Financial",
-    role: "Lead Distributed Infrastructure Engineer",
-    period: "2023 - Present",
+    company: "Indonesia Financial Group (IFG)",
+    role: "Backend Developer",
+    period: "2026 - Present",
     achievements: [
-      "Spearheaded redesign of core banking ledger backend modules, supporting a baseline scaling performance of up to 450,000 real-time payment coordinates per second.",
-      "Engineered a zero-downtime database migration routine using Change Data Capture (CDC) pipelines, moving over 1.4 Billion entries from a legacy MS SQL server cluster onto high-performance Cassandra shards.",
-      "Established multi-cloud active-active state replication, strictly adhering to compliance policies and proving less than a 500ms regional cluster cut-over failover threshold."
+      "Designed and implemented core backend services for a General Insurance platform, providing a common foundation that supports multiple insurance companies across the organization.",
+      "Reviewed pull requests to ensure code quality and best practices",
+      "Contributed to architecture discussions on scalability and system design"
     ]
   },
   {
-    company: "NetCore Systems",
-    role: "Senior Systems software Engineer",
-    period: "2020 - 2023",
+    company: "Edufund",
+    role: "Backend Lead",
+    period: "2021 - 2025",
     achievements: [
-      "Built a custom Go-based edge routing system replacing costly commercial appliance nodes, saving $2.4M annually in licensing fees.",
-      "Integrated automated cloud canary releases directly into Kubernetes ingress routing systems, reducing deployment error incidents to zero.",
-      "Configured global tracing mechanisms (OpenTelemetry) across 150+ microservices, equipping developers to quickly debug server blockages."
+      "Led the design and implementation of backend services supporting lender, borrower, and internal operational platforms.",
+      "Defined technical specifications and system designs for new features, balancing business requirements with long-term maintainability.",
+      "Integrated payment gateways, digital signature providers, and external partner APIs into core business workflows.",
+      "Built automated reporting services for internal stakeholders and regulatory compliance, improving data accuracy and operational efficiency.",
+      "Mentored backend engineers through code reviews, architecture discussions, and engineering best practices to foster a collaborative development culture."
     ]
   },
   {
-    company: "HexaScale Technologies",
-    role: "Backend & Systems Software Developer",
-    period: "2018 - 2020",
+    company: "Spacestock",
+    role: "Backend Developer",
+    period: "2019 - 2021",
     achievements: [
-      "Maintained low-level network packet interceptors writing Linux kernel models and user-space modules in C++ & Go.",
-      "Designed data ingestion jobs in Spark/Scala, handling analytical records across multi-petabyte database clusters.",
-      "Reduced cloud computing over-provisioning waste by 42% by configuring dynamic HPA parameters based on custom queue-length metric loops."
+      "Designed and developed APIs for the agent mobile application",
+      "Implemented and enhanced functionalities for internal back-office systems",
+      "Managed and maintained services for product listing operations"
     ]
   },
   {
-    company: "Apex Cloud Engineering",
-    role: "Cloud Systems Architect",
-    period: "2016 - 2018",
+    company: "Popbox",
+    role: "Backend Developer",
+    period: "2019",
     achievements: [
-      "Designed highly available multi-region infrastructure platforms supporting enterprise e-commerce workloads.",
-      "Automated complete network topologies using Terraform and Ansible, shrinking disaster response recovery windows by over 75%.",
-      "Maintained 99.99% system uptime across microservice orchestrations hosting million-user daily campaigns."
+      "Build API to control and manage locker door systems",
+      "Build & maintain some landing pages for company and their subsidiary",
+      "Create dashboard for internal and merchant",
+      "Performed data extraction and delivered visual insights for executive (BOD) reporting"
     ]
   },
   {
-    company: "ByteLogic Laboratories",
-    role: "Senior Software Generalist",
-    period: "2014 - 2016",
+    company: "Lembaga Ilmu Pengetahuan Indonesia (Now Known as BRIN)",
+    role: "IT Developer",
+    period: "2017 - 2019",
     achievements: [
-      "Refactored custom in-house cache layers to support asynchronous database query queuing, alleviating persistent database timeouts.",
-      "Developed secure client-facing REST APIs and integrated payment merchant token flows under compliance regulations.",
-      "Mentored junior platform developers across Agile sprint environments, standardizing robust automated integration test suites."
+      "Create vehicle and meeting rooms scheduling application",
+      "Maintain procurement application",
+      "Create application for submission of study assignments and overseas business trips",
+      "Create e-kinerja application to track employee KPI",
+      "Conduct training of the application"
     ]
   },
   {
-    company: "ProtoCore Solutions",
-    role: "Infrastructure Engineer Intern",
-    period: "2012 - 2014",
+    company: "Software House",
+    role: "Fullstack Developer",
+    period: "2015 - 2017",
     achievements: [
-      "Maintained local test configurations, staging environments, and configured build pipelines minimizing deployment packaging times.",
-      "Constructed automated server diagnostic reports monitoring server RAM patterns and network packet loss metrics.",
-      "Contributed modular bug fixes across legacy enterprise services to verify successful PHP and python security updates."
+      "Designed and developed a web-based event ticketing application",
+      "Delivered end-to-end website solutions for multiple clients"
     ]
   }
 ];

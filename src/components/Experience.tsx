@@ -15,18 +15,18 @@ export default function Experience() {
       <div className="flex flex-col gap-1">
         <h2 className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
           <Briefcase size={20} className="text-[#a78bfa]" />
-          Technical Leadership & Milestones
+          Experiences
         </h2>
-        <p className="text-xs text-slate-400 font-mono">
+        {/* <p className="text-xs text-slate-400 font-mono">
           Chronological professional trace building and delivering scalable systems
-        </p>
+        </p> */}
       </div>
 
       <div className="relative border-l border-white/10 ml-3 pl-6 space-y-8 py-2">
         <AnimatePresence initial={false}>
           {visibleExperiences.map((exp, idx) => (
-            <motion.div 
-              key={idx} 
+            <motion.div
+              key={idx}
               initial={idx >= 3 ? { opacity: 0, y: 15, height: 0 } : false}
               animate={{ opacity: 1, y: 0, height: "auto" }}
               exit={{ opacity: 0, y: -15, height: 0 }}

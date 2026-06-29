@@ -56,8 +56,8 @@ export default function App() {
   const menuItems = [
     { label: "About", id: "hero_section" },
     { label: "Skills", id: "skills_section" },
-    { label: "Projects", id: "projects_section" },
-    { label: "Open Source", id: "open_source_section" },
+    // { label: "Projects", id: "projects_section" },
+    // { label: "Open Source", id: "open_source_section" },
     { label: "Experience", id: "experience_section" },
     { label: "Contact", id: "contact_section" }
   ];
@@ -69,7 +69,7 @@ export default function App() {
 
       {/* Main Container */}
       <div className="max-w-6xl w-full mx-auto p-4 md:p-8 flex-1 flex flex-col gap-12 relative z-10">
-        
+
         {/* Simple navigation bar */}
         <header className="border-b border-white/10 pb-6 relative z-50">
           <div className="flex items-center justify-between gap-4">
@@ -129,10 +129,10 @@ export default function App() {
                 <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-[#ff6b25] via-[#d5e03b] to-[#a78bfa]" />
 
                 <div className="flex flex-col gap-3.5">
-                  <p className="text-[10px] font-mono text-slate-500 tracking-widest uppercase font-bold">
+                  {/* <p className="text-[10px] font-mono text-slate-500 tracking-widest uppercase font-bold">
                     Telemetry Navigation Links
-                  </p>
-                  
+                  </p> */}
+
                   <div className="grid grid-cols-2 gap-2">
                     {menuItems.map((item) => (
                       <button
@@ -146,10 +146,10 @@ export default function App() {
                   </div>
 
                   <div className="border-t border-white/5 pt-3.5 flex items-center justify-between gap-4">
-                    <span className="flex items-center gap-1.5 text-[10px] font-mono text-slate-400">
+                    {/* <span className="flex items-center gap-1.5 text-[10px] font-mono text-slate-400">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#d5e03b] animate-ping" />
                       SYSTEM STATUS: ONLINE
-                    </span>
+                    </span> */}
                     <button
                       onClick={() => {
                         setIsMobileMenuOpen(false);
@@ -167,7 +167,7 @@ export default function App() {
         </header>
 
         {/* Section 1: Hero & Identity Profiling */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -182,7 +182,7 @@ export default function App() {
         <div className="border-t border-white/5" />
 
         {/* Section 2: Technical Skill categories */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -197,7 +197,7 @@ export default function App() {
         <div className="border-t border-white/5" />
 
         {/* Section 3: Featured Production Workloads */}
-        <motion.section 
+        {/* <motion.section 
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -206,13 +206,13 @@ export default function App() {
           className="scroll-mt-20 sm:scroll-mt-24"
         >
           <Projects />
-        </motion.section>
+        </motion.section> */}
 
         {/* Divider line */}
-        <div className="border-t border-white/5" />
+        {/* <div className="border-t border-white/5" /> */}
 
         {/* Section 4: Open Source contributions stack */}
-        <motion.section 
+        {/* <motion.section 
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -221,13 +221,13 @@ export default function App() {
           className="scroll-mt-20 sm:scroll-mt-24"
         >
           <OpenSource />
-        </motion.section>
+        </motion.section> */}
 
         {/* Divider line */}
-        <div className="border-t border-white/5" />
+        {/* <div className="border-t border-white/5" /> */}
 
         {/* Section 5: Professional Milestones / Experience timeline */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -242,7 +242,7 @@ export default function App() {
         <div className="border-t border-white/5" />
 
         {/* Section 6: Transceiver Contact connection gateway */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
